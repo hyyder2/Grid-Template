@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: black;
+        }
+        
+        .main{
+            width: 1220px;
+            
+            background-color: black;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows:50px 300px 100px 60px ;
+            grid-template-areas: 
+            "header header header "
+            "sidebar content content"
+            "sidebar  content2 content3"
+            "footer footer footer";
+            column-gap: 10px;
+            row-gap: 10px;
+         justify-content: center;       
+            font-size: xx-large;
+         text-align: center;   
+         
+   
+        
+        }
+        .header{
+            background-color: #7961dc;
+            grid-area: header;
+            
+            border: 2px solid black;
+            box-shadow: 0px 2px 5px aquamarine;
+        
+
+        }
+        .sidebar{
+            background-color: #36c8c0;
+            grid-area: sidebar;
+            
+            border: 2px solid black;
+            box-shadow: 0px 2px 5px aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .content{
+            background-color: #5b65e1;
+            grid-area: content;
+            padding-top: 30px ;
+            margin-top:10px ;
+            border: 2px solid black;
+            box-shadow: 0px 2px 5px aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .content2{
+            
+            background-color: #5b65e1;
+            grid-area:content2;
+             
+              border: 2px solid black;
+                  box-shadow: 0px 2px 5px aquamarine;
+                  display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content3{
+            grid-area: content3;
+           
+            border: 2px solid black;
+            box-shadow: 0px 2px 5px aquamarine;
+            background-color: #5b65e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #7961dc;
+            
+            border: 2px solid black;
+            box-shadow: 0px 2px 5px  aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">content</div>
+        <div class="content2">content2</div>     
+        <div class="content3">Content3</div>
+        <div class="footer">footer</div>
+    </div>
+</div>
+</html>
